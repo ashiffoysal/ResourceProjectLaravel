@@ -6,12 +6,12 @@
                     <div class="footer-widget">
                         <div class="logo logo-dark">
                             <a href="{{ url('/') }}">
-                                <img src="{{ asset('frontend') }}/assets/images/logo/logo.png" alt="Edu-cause">
+                                <img src="{{ asset('uploads/logo/'.$logo->logo) }}" alt="Edu-cause">
                             </a>
                         </div>
                         <div class="logo d-none logo-light">
                             <a href="{{ url('/') }}">
-                                <img src="{{ asset('frontend') }}/assets/images/dark/logo/logo-light.png" alt="Edu-cause">
+                                <img src="{{ asset('uploads/logo/'.$logo->logo) }}" alt="Edu-cause">
                             </a>
                         </div>
 
@@ -69,10 +69,10 @@
                     <div class="footer-widget">
                         <h5 class="ft-title">Get Contact</h5>
                         <ul class="ft-link">
-                            <li><span>Phone:</span> <a href="#">{{ $companyInformation->mobile }}</a></li>
+                            {{-- <li><span>Phone:</span> <a href="#">{{ $companyInformation->mobile }}</a></li> --}}
                             <li><span>E-mail:</span> <a href="{{ $companyInformation->mobile }}">{{ $companyInformation->email }}</a>
                             </li>
-                            <li><span>Location:</span> {{ $companyInformation->address }}</li>
+                            {{-- <li><span>Location:</span> {{ $companyInformation->address }}</li> --}}
                         </ul>
                         <ul class="social-icon social-default icon-naked justify-content-start mt--20">
                             <li><a href="{{ $social->facebook }}">

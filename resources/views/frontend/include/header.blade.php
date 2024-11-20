@@ -1,4 +1,5 @@
 <header class="rbt-header rbt-header-10">
+   
     <div class="rbt-sticky-placeholder"></div>
     <!-- Start Header Top  -->
     <div class="rbt-header-top rbt-header-top-1 header-space-betwween bg-not-transparent bg-color-darker top-expended-activation">
@@ -16,11 +17,11 @@
                                         </a>
                                     </li>
                                 
-                                    <li>
+                                    {{-- <li>
                                         <a href="tel:{{ $companyInformation->mobile }}">
                                             <i class="feather-phone"></i>{{ $companyInformation->mobile }}
                                         </a>
-                                    </li>
+                                    </li> --}}
                                 </ul>
                             </div>
                             <!-- End Header Information List  -->
@@ -139,13 +140,12 @@
                     <div class="header-info">
                         <div class="logo logo-dark">
                             <a href="{{ url('/') }}">
-                                <img src="{{ asset('frontend') }}/assets/images/logo/logo.png" alt="Education Logo Images">
+                                <img src="{{ asset('uploads/logo/'.$logo->logo) }}" alt="Merit Hub Logo Images">
                             </a>
                         </div>
-
                         <div class="logo d-none logo-light">
                             <a href="{{ url('/') }}">
-                                <img src="{{ asset('frontend') }}/assets/images/dark/logo/logo-light.png" alt="Education Logo Images">
+                                <img src="{{ asset('uploads/logo/'.$logo->logo) }}" alt="Merit Hub Logo Images">
                             </a>
                         </div>
                     </div>
@@ -161,8 +161,6 @@
                                 </div>
                                 <span class="category-text d-none d-xl-block">Resources</span>
                             </div>
-
-                            <!-- Start category Area  -->
                             <div class="category-dropdown-menu d-none d-xl-block">
                                 <div class="category-menu-item">
                                     <div class="rbt-vertical-nav">
@@ -235,6 +233,7 @@
                                     
                                 </ul>
                             </li>
+                            {{-- 
                             <li class="has-dropdown has-menu-child-item">
                                 <a href="#">Pricing
                                     <i class="feather-chevron-down"></i>
@@ -248,14 +247,15 @@
                                     </li>
                                 </ul>
                             </li>
+                             --}}
                             <li class="has-dropdown has-menu-child-item">
                                 <a href="#">Pages
                                     <i class="feather-chevron-down"></i>
                                 </a>
                                 <ul class="submenu">
-                                    <li class=""><a href="#">Blogs</a></li>
-                                    <li class=""><a href="#">Privacy Policy</a></li>
-                                    <li class=""><a href="#">Terms Condition</a></li>
+                                    <li class=""><a href="{{ url('/blogs') }}">Blogs</a></li>
+                                    <li class=""><a href="{{ url('/privacy-policy') }}">Privacy Policy</a></li>
+                                    <li class=""><a href="{{ url('/terms-condition') }}">Terms Condition</a></li>
                                     <li class=""><a target="__blank" href="https://merittutors.co.uk/">Tuition Centre</a></li>
                                     <li class=""><a target="__blank" href="https://www.examcentrelondon.co.uk/ucas-registered-centre">Ucas Application</a></li>
                                     <li class="has-dropdown"><a href="#">Exam Centre London</a>

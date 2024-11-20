@@ -9,18 +9,14 @@
     <meta name="robots" content="noindex, follow" />
     <meta name="description" content="{{ $seo->meta_description }}">
     <meta property="og:type" content="website" />
-
     <meta name="keywords" content="{{ $seo->meta_keyword }}" />
     <meta name="author" content="{{ $seo->meta_author }}">
-    <meta property="og:title" content="Exam Centre London I Private Exam Centre London | GCSE, A-Level, Functional Skills, AAT, Private candidates are welcome" />
-    <meta property="og:url" content="https://www.examcentrelondon.co.uk/" />
-    <meta property="og:site_name" content="Exam Centre London I Private Exam Centre London | GCSE, A-Level, Functional Skills, AAT, Private candidates are welcome" />
-
+    <meta property="og:url" content="https://merithub.co.uk" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:title" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('frontend') }}/assets/images/favicon.png">
-
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('uploads/',$logo->favicon) }}">
     <!-- CSS
 	============================================ -->
     <link rel="stylesheet" href="{{ asset('frontend') }}/assets/css/vendor/bootstrap.min.css">
